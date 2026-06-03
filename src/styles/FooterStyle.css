@@ -1,0 +1,43 @@
+/* Footer */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-text {
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-heart {
+  color: #ef4444;
+  display: inline;
+  margin: 0 0.125rem;
+}
+
+/* Dark Mode Support - Footer stays dark even in light mode */
+@media (prefers-color-scheme: light) {
+  .footer {
+    background: #111827;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1.5rem 0;
+  }
+
+  .footer-text {
+    font-size: 0.875rem;
+  }
+}

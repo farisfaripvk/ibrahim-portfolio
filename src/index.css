@@ -1,0 +1,52 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  /* background: linear-gradient(135deg, #ffdbac 0%, #ff94a3 100%); */
+  /* background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); */
+
+  /* background: linear-gradient(135deg, #fafafa 0%, #eef2f7 50%, #e2e8f0 100%); */
+  /* background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(59, 130, 246, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(168, 85, 247, 0.08),
+      transparent 40%
+    ),
+    #fafafa; */
+
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #cbd5e1 100%);
+
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Main container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: white;
+}
+
+/* Container */
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

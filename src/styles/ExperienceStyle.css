@@ -1,0 +1,303 @@
+/* Experience Section */
+.experience-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.experience-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.experience-subtitle {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+}
+
+/* Timeline line */
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #bfdbfe;
+}
+
+@media (min-width: 768px) {
+  .timeline-line {
+    left: 50%;
+    transform: translateX(-0.5px);
+  }
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-item {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  .timeline-left {
+    padding-right: 3rem;
+    text-align: right;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .timeline-right {
+    padding-left: 3rem;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Timeline Card */
+.timeline-card {
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  margin-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-card {
+    margin-left: 0;
+  }
+}
+
+.timeline-card:hover {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Timeline Dot */
+.timeline-dot {
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #2563eb;
+  border-radius: 50%;
+  top: 1.5rem;
+}
+
+.timeline-left .timeline-dot {
+  left: -0.375rem;
+}
+
+@media (min-width: 768px) {
+  .timeline-left .timeline-dot {
+    left: auto;
+    right: -0.375rem;
+  }
+
+  .timeline-right .timeline-dot {
+    left: -0.375rem;
+  }
+}
+
+/* Timeline Period */
+.timeline-period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-left .timeline-period {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .timeline-left .timeline-period {
+    justify-content: flex-end;
+  }
+}
+
+/* Timeline Title */
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline Company */
+.timeline-company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.timeline-left .timeline-company {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .timeline-left .timeline-company {
+    justify-content: flex-end;
+  }
+}
+
+/* Timeline Achievements */
+.timeline-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-achievement {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.timeline-bullet {
+  color: #2563eb;
+  margin-top: 0.25rem;
+}
+
+.timeline-left .timeline-achievement {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .timeline-left .timeline-achievement {
+    justify-content: flex-end;
+  }
+
+  .timeline-left .timeline-bullet {
+    order: 2;
+  }
+}
+
+/* Timeline Technologies */
+.timeline-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.timeline-left .timeline-technologies {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .timeline-left .timeline-technologies {
+    justify-content: flex-end;
+  }
+}
+
+.tech-tag {
+  padding: 0.25rem 0.5rem;
+  background: #dbeafe;
+  color: #1e40af;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background: #bfdbfe;
+  transform: translateY(-1px);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .experience-section {
+    background: #1f2937;
+  }
+
+  .timeline-line {
+    background: #4b5563;
+  }
+
+  .timeline-card {
+    background: #374151;
+  }
+
+  .timeline-title {
+    color: #f3f4f6;
+  }
+
+  .timeline-company {
+    color: #9ca3af;
+  }
+
+  .timeline-achievement {
+    color: #d1d5db;
+  }
+
+  .timeline-dot {
+    background: #60a5fa;
+  }
+
+  .timeline-period {
+    color: #60a5fa;
+  }
+
+  .tech-tag {
+    background: #1e3a8a;
+    color: #93c5fd;
+  }
+
+  .tech-tag:hover {
+    background: #1e40af;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 3rem 0;
+  }
+
+  .experience-header {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-card {
+    padding: 1rem;
+  }
+
+  .timeline-title {
+    font-size: 1.125rem;
+  }
+
+  .timeline-achievement {
+    font-size: 0.75rem;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
